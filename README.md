@@ -16,4 +16,13 @@ A secure **video steganography tool** for embedding and extracting hidden messag
 Install required libraries:  
 ```bash
 pip install opencv-python numpy
-
+```
+## 🔹Usage
+🔹 **Embed a Secret Message**
+```
+python scripts/embed_message.py -i sample_video.mp4 -m secret_message.txt -o steg_video.mp4
+```
+🔹 **Extract the Hidden Message**
+```
+python scripts/extract_message.py -i steg_video.mp4 -o extracted_message.txt
+```
